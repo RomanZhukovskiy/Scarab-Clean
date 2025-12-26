@@ -1,0 +1,38 @@
+{
+  "name": "scarab_clean",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "build:gh": "vite build --base=/Scarab_Clean/",
+    "deploy": "gh-pages -d dist",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StepfanIT/Scarab_Clean.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/StepfanIT/Scarab_Clean/issues"
+  },
+  "homepage": "https://github.com/StepfanIT/Scarab_Clean",
+  "dependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "gh-pages": "^6.3.0",
+    "sass": "^1.94.2",
+    "vite": "^7.2.4",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
+  },
+  "devDependencies": {
+    "terser": "^5.44.1",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}

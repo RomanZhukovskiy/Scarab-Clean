@@ -1,0 +1,2635 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Професійний клінінг для дому та бізнесу. Надійно, швидко, якісно."
+    />
+    <meta
+      name="keywords"
+      content="клінінг, прибирання, миття вікон, хімчистка, Львів"
+    />
+    <meta name="author" content="Scarab Clean" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#3087ce" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <title>Scarab Clean — Клінінгова компанія</title>
+    <link
+      rel="icon"
+      href="/assets/logo_Scarab-Clean.D9PIuWRp.webp"
+      type="image/webp"
+    />
+
+    <!-- Fonts - optimized for LCP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Load fonts with display=swap for better web vitals -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- Preload critical images -->
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/person_clean-glass.Bf95WO8M.jpg"
+      type="image/jpeg"
+      importance="high"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/background.BumXoWS0.jpg"
+      fetchpriority="high"
+    />
+
+    <!-- Preload CSS with async + onload strategy for non-blocking render -->
+    <link
+      rel="preload"
+      href="/assets/index.CItIptCp.css"
+      as="style"
+      importance="high"
+    />
+    <link rel="stylesheet" href="/assets/index.CItIptCp.css" />
+
+    <!-- Content Security Policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+  default-src 'self';
+  script-src 'self' 'unsafe-inline';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  img-src 'self' data: blob:;
+  connect-src 'self' https://scarabclean.netlify.app ws://localhost:*;
+"
+    />
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      #loader {
+        position: fixed;
+        inset: 0;
+        background: #2c3e50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        will-change: opacity, visibility;
+      }
+
+      #loader.hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .spinner {
+        width: 60px;
+        height: 60px;
+        border: 6px solid rgba(255, 255, 255, 0.3);
+        border-top-color: #fff;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        will-change: transform;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      /* Critical above-the-fold styles to reduce render-blocking and improve LCP */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      .site-header {
+        position: fixed;
+        inset: 0 auto auto 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        z-index: 2000;
+        display: flex;
+        align-items: center;
+      }
+      .header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 0;
+      }
+      .logo__image {
+        height: 44px;
+        width: auto;
+        display: block;
+      }
+      .heroSection {
+        display: block;
+        padding-top: 80px;
+      }
+      .hero {
+        display: block;
+        padding: 40px 0;
+      }
+      .hero__title {
+        font-size: clamp(22px, 4.5vw, 40px);
+        margin: 0 0 8px;
+      }
+      .hero__subtitle {
+        font-size: clamp(14px, 2.6vw, 20px);
+        margin: 0 0 18px;
+        color: #444;
+      }
+      /* Ensure hero background images don't block initial paint */
+      .heroSection,
+      .site-header,
+      #loader {
+        background-color: transparent;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index.DwC3-JOb.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index.CAORMLWG.css">
+  </head>
+  <body>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+    <header class="header site-header" role="banner">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <img
+        src="data:image/webp;base64,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"
+        alt="logo_Scarab-Clean"
+        class="logo__image"
+        fetchpriority="high"
+        loading="eager"
+      />
+    </a>
+
+    <nav class="header__menu">
+      <a href="#prices" class="header__menu--link">Ціни</a>
+      <a href="#cleaning" class="header__menu--link">Послуги</a>
+      <a href="#gallery" class="header__menu--link">Галерея</a>
+      <a href="#benefits" class="header__menu--link">Переваги</a>
+      <a href="#contacts" class="header__menu--link">Контакти</a>
+      <a href="#form" class="header__menu--button">Замовити прибирання</a>
+    </nav>
+    <a href="#form" class="header__button">Замовити прибирання</a>
+    <button class="burger" type="button" aria-label="Відкрити меню">
+      <span class="burger__icon"></span>
+    </button>
+  </div>
+</header>
+
+    <main>
+      <section class="heroSection fade-in">
+  <div class="container heroSection__inner">
+    <div class="hero block-animation">
+      <h1 class="hero__title">Професійний клінінг для дому та бізнесу</h1>
+      <h2 class="hero__subtitle">
+        Чистота, яку видно. Надійно, швидко, якісно.
+      </h2>
+      <div class="hero__buttons">
+        <div class="hero__main-buttons">
+          <a href="#form" class="hero__button">Замовити зараз</a>
+          <a
+            href="tel:+380970809602" class="hero__button hero__button--secondary js-consult-trigger"
+          >
+            Отримати консультацію
+          </a>
+        </div>
+      </div>
+  </div>
+</section>
+
+      <section class="services" id="services">
+  <div class="container services__inner" id="prices">
+    <ul class="services__list">
+      <li class="serviceCard fade-in">
+        <div class="serviceCard__header">
+          <div
+            class="serviceCard__bg"
+            style="
+              background-image: url('/assets/dry_cleaning-furniture.DPB9TRsX.jpg');
+            "
+          ></div>
+          <h2 class="serviceCard__title">Хімчистка м’яких меблів</h2>
+          <h3 class="serviceCard__price">Ціна: від 250 грн</h3>
+          <p class="serviceCard__toggle">Детальніше...</p>
+        </div>
+
+        <div class="serviceCard__details">
+          <p class="serviceCard__subtitle">Що входить:</p>
+          <ul class="serviceCard__features">
+            <li>Хімчистка диванів, крісел, стільців, пуфів</li>
+            <li>Видалення плям</li>
+            <li>Глибока чистка та дезінфекція</li>
+            <li>Виведення запахів</li>
+            <li>Перешивка м'яких меблів</li>
+          </ul>
+          <p class="serviceCard__note">
+            Ціна залежить від розмірів та рівня забруднення.
+          </p>
+          <a href="#form" class="serviceCard__cta">Замовити послугу</a>
+        </div>
+      </li>
+      <li class="serviceCard fade-in">
+        <div class="serviceCard__header">
+          <div
+            class="serviceCard__bg"
+            style="background-image: url('/assets/odor_removal.COtBzWtj.jpg')"
+          ></div>
+          <h2 class="serviceCard__title">Виведення запахів</h2>
+          <h3 class="serviceCard__price">Ціна: від 400 грн</h3>
+          <p class="serviceCard__toggle">Детальніше...</p>
+        </div>
+
+        <div class="serviceCard__details">
+          <p class="serviceCard__subtitle">Що входить:</p>
+          <ul class="serviceCard__features">
+            <li>Глибока обробка тканин</li>
+            <li>Озонування або спеціальні нейтралізатори</li>
+            <li>Антибактеріальна та протигрибкова дезінфекція</li>
+          </ul>
+          <p class="serviceCard__note">
+            Ціна залежить від розмірів та рівня забруднення.
+          </p>
+          <a href="#form" class="serviceCard__cta">Замовити послугу</a>
+        </div>
+      </li>
+      <li class="serviceCard fade-in">
+        <div class="serviceCard__header">
+          <div
+            class="serviceCard__bg"
+            style="background-image: url('/assets/facade_cleaning.ydX-1F1v.jpg')"
+          ></div>
+          <h2 class="serviceCard__title">Миття фасадів</h2>
+          <h3 class="serviceCard__price">Ціна: від 80 грн за м²</h3>
+          <p class="serviceCard__toggle">Детальніше...</p>
+        </div>
+
+        <div class="serviceCard__details">
+          <p class="serviceCard__subtitle">Що входить:</p>
+          <ul class="serviceCard__features">
+            <li>Миття навісів</li>
+            <li>Чищення терас, парканів, воріт</li>
+            <li>Очищення конструкцій під тиском</li>
+            <li>Миття фасаду мийкою високого тиску</li>
+          </ul>
+          <p class="serviceCard__note">
+            Ціна залежить від розмірів та рівня забруднення.
+          </p>
+          <a href="#form" class="serviceCard__cta">Замовити послугу</a>
+        </div>
+      </li>
+      <li class="serviceCard fade-in">
+        <div class="serviceCard__header">
+          <div
+            class="serviceCard__bg"
+            style="
+              background-image: url('/assets/washing_windows-renovation.CKdYNo94.jpg');
+            "
+          ></div>
+          <h2 class="serviceCard__title">Миття вікон після ремонту</h2>
+          <h3 class="serviceCard__price">Ціна: від 150 грн за м²</h3>
+          <p class="serviceCard__toggle">Детальніше...</p>
+        </div>
+
+        <div class="serviceCard__details">
+          <p class="serviceCard__subtitle">Що входить:</p>
+          <ul class="serviceCard__features">
+            <li>Видалення будівельного пилу</li>
+            <li>Зняття залишків розчину, фарби, плівок</li>
+            <li>Миття рам, профілю, фурнітури</li>
+          </ul>
+          <p class="serviceCard__note">
+            Ціна залежить від розмірів та рівня забруднення.
+          </p>
+          <a href="#form" class="serviceCard__cta">Замовити послугу</a>
+        </div>
+      </li>
+      <li class="serviceCard fade-in">
+        <div class="serviceCard__header">
+          <div
+            class="serviceCard__bg"
+            style="
+              background-image: url('/assets/window_cleaning-machine.DE2Pfqwx.jpg');
+            "
+          ></div>
+          <h2 class="serviceCard__title">
+            Миття вікон із використанням підйомної установки (до 14 м)
+          </h2>
+          <h3 class="serviceCard__price">Ціна: від 60 грн за м²</h3>
+          <p class="serviceCard__toggle">Детальніше...</p>
+        </div>
+
+        <div class="serviceCard__details">
+          <p class="serviceCard__subtitle">Що входить:</p>
+          <ul class="serviceCard__features">
+            <li>Миття зовнішніх та внутрішніх поверхонь скла</li>
+            <li>Професійна підйомна установка до 14 м</li>
+            <li>Миття важкодоступних вікон</li>
+            <li>Очищення рам та підвіконь</li>
+            <li>Безпечне виконання робіт</li>
+          </ul>
+          <p class="serviceCard__note">
+            Ціна залежить від розмірів та рівня забруднення.
+          </p>
+          <a href="#form" class="serviceCard__cta">Замовити послугу</a>
+        </div>
+      </li>
+      <li class="serviceCard fade-in">
+        <div class="serviceCard__header">
+          <div
+            class="serviceCard__bg"
+            style="background-image: url('/assets/paving_stones-clean.79t3mwz8.jpg')"
+          ></div>
+          <h2 class="serviceCard__title">Миття бруківки</h2>
+          <h3 class="serviceCard__price">Ціна: від 60 грн за м²</h3>
+          <p class="serviceCard__toggle">Детальніше...</p>
+        </div>
+
+        <div class="serviceCard__details">
+          <p class="serviceCard__subtitle">Що входить:</p>
+          <ul class="serviceCard__features">
+            <li>Миття апаратами високого тиску</li>
+            <li>Видалення моху, нагару, пилу, висолів</li>
+            <li>Глибоке очищення фасадів та тротуарної плитки</li>
+          </ul>
+          <p class="serviceCard__note">
+            Ціна залежить від розмірів та рівня забруднення.
+          </p>
+          <a href="#form" class="serviceCard__cta">Замовити послугу</a>
+        </div>
+      </li>
+      <li class="serviceCard fade-in">
+        <div class="serviceCard__header">
+          <div
+            class="serviceCard__bg"
+            style="background-image: url('/assets/curtain_rods-clean.BsItAvq_.jpg')"
+          ></div>
+          <h2 class="serviceCard__title">Миття маркізів та дахів</h2>
+          <h3 class="serviceCard__price">Ціна: від 450 грн</h3>
+          <p class="serviceCard__toggle">Детальніше...</p>
+        </div>
+
+        <div class="serviceCard__details">
+          <p class="serviceCard__subtitle">Що входить:</p>
+          <ul class="serviceCard__features">
+            <li>Миття тканинних та пластикових конструкцій</li>
+            <li>Видалення пилу, плісняви та забруднень</li>
+            <li>Обробка спеціальними миючими засобами</li>
+          </ul>
+          <p class="serviceCard__note">
+            Ціна залежить від розмірів та рівня забруднення.
+          </p>
+          <a href="#form" class="serviceCard__cta">Замовити послугу</a>
+        </div>
+      </li>
+
+      <li class="serviceCard fade-in">
+        <div class="serviceCard__header">
+          <div
+            class="serviceCard__bg"
+            style="background-image: url('/assets/supportive_clean.DxiqdgtD.jpg')"
+          ></div>
+          <h2 class="serviceCard__title">Підтримуюче прибирання</h2>
+          <h3 class="serviceCard__price">Ціна: від 1500 грн</h3>
+          <p class="serviceCard__toggle">Детальніше...</p>
+        </div>
+
+        <div class="serviceCard__details">
+          <p class="serviceCard__subtitle">Що входить:</p>
+          <ul class="serviceCard__features">
+            <li>Вологе та сухе прибирання</li>
+            <li>Протирання пилу</li>
+            <li>Миття підлоги</li>
+            <li>Санвузли</li>
+            <li>Очищення кухонних поверхонь</li>
+          </ul>
+          <p class="serviceCard__note">
+            Ціна залежить від розмірів та рівня забруднення.
+          </p>
+          <a href="#form" class="serviceCard__cta">Замовити послугу</a>
+        </div>
+      </li>
+      <li class="serviceCard fade-in">
+        <div class="serviceCard__header">
+          <div
+            class="serviceCard__bg"
+            style="background-image: url('/assets/general_clean.BkO7jHAU.jpg')"
+          ></div>
+
+          <h2 class="serviceCard__title">Генеральне прибирання</h2>
+          <h3 class="serviceCard__price">Ціна: від 2500 грн</h3>
+          <p class="serviceCard__toggle">Детальніше...</p>
+        </div>
+
+        <div class="serviceCard__details">
+          <p class="serviceCard__subtitle">Що входить:</p>
+          <ul class="serviceCard__features">
+            <li>Повне глибоке прибирання всього приміщення</li>
+            <li>Детальна чистка кухні та санвузлів</li>
+            <li>Миття меблів зовні</li>
+            <li>Дезінфекція</li>
+            <li>Вікна (як додаткова опція)</li>
+          </ul>
+          <p class="serviceCard__note">
+            Ціна залежить від розмірів та рівня забруднення.
+          </p>
+          <a href="#form" class="serviceCard__cta">Замовити послугу</a>
+        </div>
+      </li>
+      <li class="serviceCard fade-in">
+        <div class="serviceCard__header">
+          <div
+            class="serviceCard__bg"
+            style="background-image: url('/assets/cleaningWindow.P3yFM_8R.webp')"
+          ></div>
+
+          <h2 class="serviceCard__title">Cезонне миття вікон</h2>
+          <h3 class="serviceCard__price">Ціна: від 80 грн</h3>
+          <p class="serviceCard__toggle">Детальніше...</p>
+        </div>
+
+        <div class="serviceCard__details">
+          <p class="serviceCard__subtitle">Що входить:</p>
+          <ul class="serviceCard__features">
+            <li>Миття скла з обох сторін</li>
+            <li>Миття віконних рам</li>
+            <li>Протирання підвіконня</li>
+          </ul>
+          <p class="serviceCard__note">
+            Ціна залежить від розмірів та рівня забруднення.
+          </p>
+          <a href="#form" class="serviceCard__cta">Замовити послугу</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="cleaning" id="cleaning">
+  <div class="container cleaning__inner" style="padding: 40px 24px">
+    <h1 class="cleaning__title fade-in">Базове прибирання</h1>
+
+    <p class="cleaning__subtitle fade-in">
+      Клінер приїжджає у домовлений час зі всім необхідним і приступає до
+      прибирання. Вам залишається лише оцінити результат!
+    </p>
+
+    <ul class="cleaning__tabs fade-in">
+      <li class="cleaning__tab active" data-clean="kitchen">Кухня</li>
+      <li class="cleaning__tab" data-clean="rooms">Кімнати</li>
+      <li class="cleaning__tab" data-clean="bathroom">Ванна і туалет</li>
+      <li class="cleaning__tab" data-clean="hall">Коридор</li>
+    </ul>
+
+    <div class="cleaning__content">
+      <div class="cleaningBlock active" data-clean-block="kitchen">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="k1">
+              <svg height="55" width="45">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-fridge"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Холодильник</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-plates"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Посуд</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k3">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-stove"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Плита</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k4">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shell"
+                  width="50"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Раковина</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k5">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-trash"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Сміття</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k6">
+              <svg
+                height="25"
+                width="44"
+                style="background-color: rgb(255, 255, 255); margin-right: 5px"
+              >
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-tile"
+                  width="54"
+                  height="54"
+                  y="-15"
+                  x="-5"
+                ></use>
+              </svg>
+              <p>Фартух</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k7">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-kitchenHood"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Витяжка</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k8">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shelf"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Шафи</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k9">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-teapot"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Техніка</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k10">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-surfaces"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Поверхні</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+              <a href="#contacts" class="cleaningDesc__button"
+                >Дізнатися ціну</a
+              >
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="k1">
+              <h3>Холодильник</h3>
+              <p>Миємо холодильник знизу і до самого верху(ззовні).</p>
+              <img src="data:image/webp;base64,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" alt="Холодильник" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k2">
+              <h3>Посуд</h3>
+              <p>
+                Помиємо весь посуд, до якого у вас не дійшли руки (до 30 хв).
+              </p>
+              <img src="/assets/plates.DX4Q5Cz7.jpg" alt="Посуд" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k3">
+              <h3>Плита</h3>
+              <p>
+                Не мучте ні себе, ні плиту: наші клінери знають що з нею робити.
+              </p>
+              <img src="/assets/stove.BbefKNFr.jpg" alt="Плита" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k4">
+              <h3>Раковина</h3>
+              <p>
+                Наліт на крані, бруд на раковині який вже давно не відмивається:
+                ми знаємо що робити.
+              </p>
+              <img src="/assets/shell.CGmzQgU0.jpg" alt="Раковина" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k5">
+              <h3>Сміття</h3>
+              <p>Не встигли винести сміття - ми це зробимо.</p>
+              <img src="/assets/trash.DhzTvMFa.jpg" alt="Сміття" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k6">
+              <h3>Фартух</h3>
+              <p>
+                На фартуху завжди багато бруду та жиру, тут потрібно приділити
+                багато часу, сили та професійної хімії.
+              </p>
+              <img src="/assets/tile.CfmW9U8v.jpg" alt="Фартух" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k7">
+              <h3>Витяжка</h3>
+              <p>Відмиємо витяжку від жиру та застарілого бруду(ззовні).</p>
+              <img src="/assets/kitchenHood.DmxLf7MC.jpg" alt="Витяжка" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k8">
+              <h3>Шафи</h3>
+              <p>Миємо всі меблі ззовні та зверху.</p>
+              <img src="/assets/shelf.BzTCICX4.jpg" alt="Шафи" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k9">
+              <h3>Техніка</h3>
+              <p>Протираємо всю кухонну техніку на поверхнях.</p>
+              <img src="/assets/teapot.BVb6agA_.jpg" alt="Техніка" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k10">
+              <h3>Поверхні</h3>
+              <p>
+                Протираємо всю кухонну техніку яка стоїть у вас на поверхнях.
+              </p>
+              <img src="/assets/surfaces.BhK7quSU.jpg" alt="Поверхні" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cleaningBlock fade-in" data-clean-block="rooms">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="r1">
+              <svg height="55" width="75">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-bed"
+                  width="64"
+                  height="64"
+                ></use>
+              </svg>
+              <p>Спальне місце</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-Tshirt"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Одяг</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r3">
+              <svg height="55" width="85">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-wardrobe"
+                  width="64"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Шафи та комоди</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r4">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-lamp"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Освітлення</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r5">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shelves"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Поверхні</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r6">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-vase"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Декор</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+              <a href="#contacts" class="cleaningDesc__button"
+                >Дізнатися ціну</a
+              >
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="r1">
+              <h>Спальне місце</h>
+              <p>Застеляємо ліжко, протираємо карказ та забираємо пил.</p>
+              <img src="/assets/bed.CdAMgr7f.jpg" alt="Спальне місце" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r2">
+              <h3>Одяг</h3>
+              <p>Покажіть куди і ми поскладаємо.</p>
+              <img src="/assets/Tshirt.D0Ye2MMO.jpg" alt="Одяг" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r3">
+              <h3>Шафи та комоди</h3>
+              <p>
+                Протремо пил та помиємо зверху і ззовні від плям та відбитків.
+              </p>
+              <img src="/assets/wardrobe.BiISL7y0.jpg" alt="Шафи та комоди" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r4">
+              <h3>Освітлення</h3>
+              <p>Протремо світильники(до яких клінер може дотягнутися).</p>
+              <img src="/assets/lamp.GCgyDaHU.jpg" alt="Освітлення" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r5">
+              <h3>Поверхні</h3>
+              <p>Протремо підлогу, всі поверхні, полички, столи, підвіконня.</p>
+              <img src="/assets/shelves.CDI0dNNf.jpg" alt="Поверхні" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r6">
+              <h3>Декор</h3>
+              <p>
+                Обезпилимо та протремо дзеркала, вази, фотографії, статуетки і
+                тд.
+              </p>
+              <img src="/assets/vase.BCRPWxqy.jpg" alt="Декор" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cleaningBlock fade-in" data-clean-block="bathroom">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="b1">
+              <svg
+                height="25"
+                width="44"
+                style="background-color: rgb(255, 255, 255); margin-right: 5px"
+              >
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-tile"
+                  width="54"
+                  height="54"
+                  y="-15"
+                  x="-5"
+                ></use>
+              </svg>
+              <p>Стiни</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-toilet"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Унiтаз</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b3">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-largeMirror"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Дзеркало</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b4">
+              <svg height="65" width="50">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-washbasin"
+                  width="54"
+                  height="64"
+                  y="-10"
+                ></use>
+              </svg>
+              <p>Раковина</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b5">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-detergents"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Поверхні</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+              <a href="#contacts" class="cleaningDesc__button"
+                >Дізнатися ціну</a
+              >
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="b1">
+              <h3>Стiни</h3>
+              <p>Миємо плитку від нальоту.</p>
+              <img src="/assets/tile.CfmW9U8v.jpg" alt="Стіни" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b2">
+              <h3>Унiтаз</h3>
+              <p>Очищаємо унітаз від будь-яких забруднень.</p>
+              <img src="/assets/toilet.B4yjNX0P.jpg" alt="Унітаз" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b3">
+              <h3>Дзеркало</h3>
+              <p>Протираємо всі дзеркала.</p>
+              <img src="/assets/largeMirror.B6Nq_0-V.jpg" alt="Дзеркало" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b4">
+              <h3>Раковина</h3>
+              <p>Миємо крани від нальоту та раковину від забруднень.</p>
+              <img src="/assets/washbasin.Dt2XLfJd.jpg" alt="Раковина" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b5">
+              <h3>Поверхні</h3>
+              <p>Протираємо поверхні та підлогу.</p>
+              <img src="/assets/detergents.Bu3v9ZjA.jpg" alt="Поверхні" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cleaningBlock fade-in" data-clean-block="hall">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="h1">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-parquet"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Підлога</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="h2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-hanger"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Меблі</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+              <a href="#contacts" class="cleaningDesc__button"
+                >Дізнатися ціну</a
+              >
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="h1">
+              <h3>Підлога</h3>
+              <p>Пилососимо та миємо підлогу.</p>
+              <img src="/assets/parquet.DcHaBf5w.jpg" alt="Підлога" />
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="h2">
+              <h3>Меблі</h3>
+              <p>Протираємо комоди, лавочки та шафи (ззовні).</p>
+              <img src="/assets/hanger.BvUODkGx.jpg" alt="Меблі" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="cleaning">
+  <div class="container cleaning__inner" style="padding: 40px 24px">
+    <h1 class="cleaning__title fade-in">Генеральне прибирання</h1>
+
+    <p class="cleaning__subtitle fade-in">
+      Клінер приїжджає у домовлений час зі всім необхідним і приступає до
+      прибирання. Вам залишається лише оцінити результат!
+    </p>
+
+    <ul class="cleaning__tabs fade-in">
+      <li class="cleaning__tab active" data-clean="kitchen">Кухня</li>
+      <li class="cleaning__tab" data-clean="rooms">Кімнати</li>
+      <li class="cleaning__tab" data-clean="bathroom">Ванна і туалет</li>
+      <li class="cleaning__tab" data-clean="hall">Коридор</li>
+    </ul>
+
+    <div class="cleaning__content">
+      <div class="cleaningBlock active" data-clean-block="kitchen">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="k1">
+              <svg height="55" width="45">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-fridge"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Холодильник</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-plates"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Посуд</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k3">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-stove"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Плита</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k4">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shell"
+                  width="50"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Раковина</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k5">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-trash"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Сміття</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k6">
+              <svg
+                height="25"
+                width="44"
+                style="background-color: rgb(255, 255, 255); margin-right: 5px"
+              >
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-tile"
+                  width="54"
+                  height="54"
+                  y="-15"
+                  x="-5"
+                ></use>
+              </svg>
+              <p>Фартух</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k7">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-kitchenHood"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Витяжка</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k8">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shelf"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Шафи</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k9">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-teapot"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Техніка</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k10">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-surfaces"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Поверхні</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k11">
+              <svg height="65" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-table"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Інше</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+
+
+              <a href="#contacts" class="cleaningDesc__button">Дізнатися ціну</a>
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="k1">
+              <h3>Холодильник</h3>
+              <p>
+                Миємо холодильник знизу і до самого верху ззовні і в середині,
+                знімаємо всі полички та протираємо окремо (якщо є
+                морозилка - попередньо розморозьте і ми її помиємо).
+              </p>
+              <img src="data:image/webp;base64,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" alt="Холодильник" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k2">
+              <h3>Посуд</h3>
+              <p>Помиємо посуд до якого у вас не дійшли руки(до 30хв).</p>
+              <img src="/assets/plates.DX4Q5Cz7.jpg" alt="Посуд" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k3">
+              <h3>Плита та духовка</h3>
+              <p>
+                Відмиємо плиту та духовку в середині та ззовні: наші клінери
+                знають що з нею робити.
+              </p>
+              <img src="/assets/stove.BbefKNFr.jpg" alt="Плита та духовка" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k4">
+              <h3>Раковина</h3>
+              <p>
+                Наліт на крані, бруд на раковині який вже давно не відмивається:
+                ми знаємо що робити.
+              </p>
+              <img src="/assets/shell.CGmzQgU0.jpg" alt="Раковина" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k5">
+              <h3>Сміття</h3>
+              <p>Не встигли винести сміття - ми це зробимо.</p>
+              <img src="/assets/trash.DhzTvMFa.jpg" alt="Сміття" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k6">
+              <h3>Фартух</h3>
+              <p>
+                На фартуху завжди багато бруду та жиру, тут потрібно приділити
+                багато часу, сили та професійної хімії. Впораємось з брудними
+                швами та плиткою.
+              </p>
+              <img src="/assets/tile.CfmW9U8v.jpg" alt="Фартух" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k7">
+              <h3>Витяжка</h3>
+              <p>
+                Відмиємо витяжку від жиру та застарілого бруду ззовні та
+                всередині.
+              </p>
+              <img src="/assets/kitchenHood.DmxLf7MC.jpg" alt="Витяжка" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k8">
+              <h3>Шафи</h3>
+              <p>
+                Миємо всі меблі ззовні та всередині, після чого складаємо все на
+                свої місця.
+              </p>
+              <img src="/assets/shelf.BzTCICX4.jpg" alt="Шафи" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k9">
+              <h3>Техніка</h3>
+              <p>
+                Протираємо всю кухонну техніку яка стоїть у вас на поверхнях.
+              </p>
+              <img src="/assets/teapot.BVb6agA_.jpg" alt="Техніка" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k10">
+              <h3>Поверхні</h3>
+              <p>
+                Збираємо пил та протираємо всі поверхні на кухні(столешня,
+                підвіконня, столи, барні стійки, підлогу).
+              </p>
+              <img src="/assets/shelves.CDI0dNNf.jpg" alt="Поверхні" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k11">
+              <h3>Інше</h3>
+              <p>
+                Протремо стільці від бруду, помиємо мікрохвильову піч ззовні та
+                всередині.
+              </p>
+              <img src="/assets/table.c0tPz36p.jpg" alt="Інше" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cleaningBlock fade-in" data-clean-block="rooms">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="r1">
+              <svg height="55" width="75">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-bed"
+                  width="64"
+                  height="64"
+                ></use>
+              </svg>
+              <p>Спальне місце</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-Tshirt"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Одяг</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r3">
+              <svg height="55" width="85">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-wardrobe"
+                  width="64"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Шафи та комоди</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r4">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-lamp"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Освітлення</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r5">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shelves"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Поверхні</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r6">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-vase"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Декор</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r7">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-parquet"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Підлога</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+
+
+              <a href="#contacts" class="cleaningDesc__button">Дізнатися ціну</a>
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="r1">
+              <h3>Спальне місце</h3>
+              <p>
+                Застеляємо ліжко, протираємо карказ та забираємо пил.При
+                потребі замінюємо стару постіль на нову.
+              </p>
+              <img src="/assets/bed.CdAMgr7f.jpg" alt="Спальне місце" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r2">
+              <h3>Одяг</h3>
+              <p>Покажіть куди, і ми поскладаємо ваш одяг.</p>
+              <img src="/assets/Tshirt.D0Ye2MMO.jpg" alt="Одяг" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r3">
+              <h3>Шафи та комоди</h3>
+              <p>
+                Протремо пил та помиємо всередині та ззовні від плям та
+                відбитків.
+              </p>
+              <img src="/assets/wardrobe.BiISL7y0.jpg" alt="Шафи та комоди" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r4">
+              <h3>Освітлення</h3>
+              <p>Протремо світильники та все освітлення, яке є у кімнаті.</p>
+              <img src="/assets/lamp.GCgyDaHU.jpg" alt="Освітлення" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r5">
+              <h3>Поверхні</h3>
+              <p>
+                Протремо підвіконня, всі поверхні, полички, столи, підвіконня.
+              </p>
+              <img src="/assets/shelves.CDI0dNNf.jpg" alt="Поверхні" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r6">
+              <h3>Декор</h3>
+              <p>
+                Обезпилимо та протремо дзеркала, вази, фотографії, статуетки і
+                тд.
+              </p>
+              <img src="/assets/vase.BCRPWxqy.jpg" alt="Декор" />
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="r7">
+              <h3>Підлога</h3>
+              <p>Пилососимо підлогу та миємо її в 3 етапи.</p>
+              <img src="/assets/parquet.DcHaBf5w.jpg" alt="Підлога" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cleaningBlock fade-in" data-clean-block="bathroom">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="b1">
+              <svg
+                height="25"
+                width="44"
+                style="background-color: rgb(255, 255, 255); margin-right: 5px"
+              >
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-tile"
+                  width="54"
+                  height="54"
+                  y="-15"
+                  x="-5"
+                ></use>
+              </svg>
+              <p>Стiни</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-toilet"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Унiтаз</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b3">
+              <svg height="55" width="45">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-mirror"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Дзеркало</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b4">
+              <svg height="65" width="50">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-washbasin"
+                  width="54"
+                  height="64"
+                  y="-10"
+                ></use>
+              </svg>
+              <p>Раковина</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b5">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-parquet"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Поверхні</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b6">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shower"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Душ/Ванна</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b7">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-detergents"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Інше</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+
+              <a href="#contacts" class="cleaningDesc__button">Дізнатися ціну</a>
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="b1">
+              <h3>Стiни</h3>
+              <p>Миємо плитку від нальоту та особливу увагу приділяємо швам.</p>
+              <img src="/assets/tile.CfmW9U8v.jpg" alt="Стіни" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b2">
+              <h3>Унiтаз</h3>
+              <p>
+                Миємо унітаз у декілька етапів. Впораємося з будь-якими
+                забрудненнями.
+              </p>
+              <img src="/assets/toilet.B4yjNX0P.jpg" alt="Унітаз" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b3">
+              <h3>Дзеркало</h3>
+              <p>Протираємо всі дзеркала та наполіровуємо їх до блиску.</p>
+              <img src="/assets/mirror.CquYQJub.jpg" alt="Дзеркало" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b4">
+              <h3>Раковина</h3>
+              <p>
+                Миємо крани від нальоту та раковину від забруднень та
+                наполіровуємо їх до блиску.
+              </p>
+              <img src="/assets/washbasin.Dt2XLfJd.jpg" alt="Раковина" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b5">
+              <h3>Поверхні</h3>
+              <p>Протираємо поверхні та підлгу.</p>
+              <img src="/assets/parquet.DcHaBf5w.jpg" alt="Поверхні" />
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="b6">
+              <h3>Душ/Ванна</h3>
+              <p>
+                Миємо ванну або душ від нальоту, окрему увагу приділяємо склу.
+              </p>
+              <img src="/assets/shower.CyEismlK.jpg" alt="Душ/Ванна" />
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="b7">
+              <h3>Інше</h3>
+              <p>Обережно складаємо та протираємо баночки.</p>
+              <img src="/assets/detergents.Bu3v9ZjA.jpg" alt="Інше" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cleaningBlock fade-in" data-clean-block="hall">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="h1">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-parquet"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Підлога</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="h2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-wardrobe"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Меблі</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="h3">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-largeMirror"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Дзеркало</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="h4">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-hanger"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Інше</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+
+              <a href="#contacts" class="cleaningDesc__button">Дізнатися ціну</a>
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="h1">
+              <h3>Підлога</h3>
+              <p>Пилососимо та миємо підлогу.</p>
+              <img src="/assets/parquet.DcHaBf5w.jpg" alt="Підлога" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="h2">
+              <h3>Меблі</h3>
+              <p>Протираємо комоди, лавочки та шафи ззовні.</p>
+              <img src="/assets/wardrobe.BiISL7y0.jpg" alt="Меблі" />
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="h3">
+              <h3>Дзеркало</h3>
+              <p>Миємо та натираємо всі дзеркала.</p>
+              <img src="/assets/largeMirror.B6Nq_0-V.jpg" alt="Дзеркало" />
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="h4">
+              <h3>Інше</h3>
+              <p>Протираємо або миємо коврик, та ставимо все на свої місця.</p>
+              <img src="/assets/hanger.BvUODkGx.jpg" alt="Інше" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="cleaning">
+  <div class="container cleaning__inner" style="padding: 40px 24px">
+    <h1 class="cleaning__title fade-in">Підтримуюче прибирання</h1>
+
+    <p class="cleaning__subtitle fade-in">
+      Клінер використовує Ваше обладнання та хімію та виконує прибирання від 1-го
+      разу на тиждень
+    </p>
+
+    <ul class="cleaning__tabs fade-in">
+      <li class="cleaning__tab active" data-clean="kitchen">Кухня</li>
+      <li class="cleaning__tab" data-clean="rooms">Кімнати</li>
+      <li class="cleaning__tab" data-clean="bathroom">Ванна і туалет</li>
+      <li class="cleaning__tab" data-clean="hall">Коридор</li>
+    </ul>
+
+    <div class="cleaning__content">
+      <div class="cleaningBlock active" data-clean-block="kitchen">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="k1">
+              <svg height="55" width="45">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-fridge"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Холодильник</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-plates"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Посуд</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k3">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-stove"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Плита</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k4">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shell"
+                  width="50"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Раковина</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k5">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-trash"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Сміття</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k6">
+              <svg
+                height="25"
+                width="44"
+                style="background-color: rgb(255, 255, 255); margin-right: 10px"
+              >
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-tile"
+                  width="54"
+                  height="54"
+                  y="-15"
+                  x="-5"
+                ></use>
+              </svg>
+              <p>Фартух</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k7">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-kitchenHood"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Витяжка</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k8">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shelf"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Шафи</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k9">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-teapot"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Техніка</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="k10">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-surfaces"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Поверхні</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+
+              <a href="#contacts" class="cleaningDesc__button"
+                >Дізнатися ціну</a
+              >
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="k1">
+              <h3>Холодильник</h3>
+              <p>Миємо холодильник знизу і до самого верху(ззовні).</p>
+              <img src="data:image/webp;base64,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" alt="Холодильник" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k2">
+              <h3>Посуд</h3>
+              <p>
+                Помиємо весь посуд, до якого у вас не дійшли руки (до 30 хв).
+              </p>
+              <img src="/assets/plates.DX4Q5Cz7.jpg" alt="Посуд" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k3">
+              <h3>Плита</h3>
+              <p>
+                Не мурдуйте ні себе, ні плиту: наші клінери знають що з нею
+                робити.
+              </p>
+              <img src="/assets/stove.BbefKNFr.jpg" alt="Плита" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k4">
+              <h3>Раковина</h3>
+              <p>
+                Наліт на крані, бруд на раковині який вже давно не відмивається:
+                ми знаємо що робити.
+              </p>
+              <img src="/assets/shell.CGmzQgU0.jpg" alt="Раковина" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k5">
+              <h3>Сміття</h3>
+              <p>Не встигли винести сміття - ми це зробимо.</p>
+              <img src="/assets/trash.DhzTvMFa.jpg" alt="Сміття" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k6">
+              <h3>Фартух</h3>
+              <p>
+                На фартуху завжди багато бруду та жиру, тут потрібно приділити
+                багато часу, сили та професійної хімії.
+              </p>
+              <img src="/assets/tile.CfmW9U8v.jpg" alt="Фартух" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k7">
+              <h3>Витяжка</h3>
+              <p>Відмиємо витяжку від жиру та застарілого бруду(ззовні).</p>
+              <img src="/assets/kitchenHood.DmxLf7MC.jpg" alt="Витяжка" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k8">
+              <h3>Шафи</h3>
+              <p>Миємо всі меблі ззовні та зверху.</p>
+              <img src="/assets/shelf.BzTCICX4.jpg" alt="Шафи" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k9">
+              <h3>Техніка</h3>
+              <p>
+                Протираємо всю кухону техніку яка стоїть у вас на поверхнях.
+              </p>
+              <img src="/assets/teapot.BVb6agA_.jpg" alt="Техніка" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="k10">
+              <h3>Поверхні</h3>
+              <p>
+                Збираємо пил та протираємо всі поверхні на кухні(столешня,
+                підвіконня, столи, барні стійки, підлогу).
+              </p>
+              <img src="/assets/surfaces.BhK7quSU.jpg" alt="Поверхні" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cleaningBlock fade-in" data-clean-block="rooms">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem" data-item="r1">
+              <svg height="55" width="75">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-bed"
+                  width="64"
+                  height="64"
+                ></use>
+              </svg>
+              <p>Спальне місце</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-Tshirt"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Одяг</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r3">
+              <svg height="55" width="85">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-wardrobe"
+                  width="64"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Шафи та комоди</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r4">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-lamp"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Освітлення</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r5">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shelves"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Поверхні</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="r6">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-vase"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Декор</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+
+              <a href="#contacts" class="cleaningDesc__button">Дізнатися ціну</a>
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="r1">
+              <h3>Спальне місце</h3>
+              <p>Застеляємо ліжко, протираємо карказ та забираємо пил.</p>
+              <img src="/assets/bed.CdAMgr7f.jpg" alt="Спальне місце" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r2">
+              <h3>Одяг</h3>
+              <p>Покажіть куди, і ми поскладаємо.</p>
+              <img src="/assets/Tshirt.D0Ye2MMO.jpg" alt="Одяг" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r3">
+              <h3>Шафи та комоди</h3>
+              <p>
+                Протремо пил та помиємо зверху і ззовні від плям та
+                відбитків.
+              </p>
+              <img src="/assets/wardrobe.BiISL7y0.jpg" alt="Шафи та комоди" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r4">
+              <h3>Освітлення</h3>
+              <p>Протремо світильники(до яких клінер може дотягнутися)</p>
+              <img src="/assets/lamp.GCgyDaHU.jpg" alt="Освітлення" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r5">
+              <h3>Поверхні</h3>
+              <p>Протремо підлогу, всі поверхні, полички, столи, підвіконня.</p>
+              <img src="/assets/shelves.CDI0dNNf.jpg" alt="Поверхні" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="r6">
+              <h3>Декор</h3>
+              <p>
+                Обезпилимо та протремо дзеркала, вази, фотографії, статуетки і
+                тд.
+              </p>
+              <img src="/assets/vase.BCRPWxqy.jpg" alt="Декор" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cleaningBlock fade-in" data-clean-block="bathroom">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="b1">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-shower"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Ванна/Душ</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-toilet"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Унiтаз</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b3">
+              <svg height="55" width="45">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-mirror"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Дзеркало</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b4">
+              <svg height="65" width="50">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-washbasin"
+                  width="54"
+                  height="64"
+                  y="-10"
+                ></use>
+              </svg>
+              <p>Раковина</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="b5">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-detergents"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Поверхні</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+
+              <a href="#contacts" class="cleaningDesc__button">Дізнатися ціну</a>
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="b1">
+              <h3>Ванна/Душ</h3>
+              <p>Миємо душ або ванну, особливу увагу приділяємо склу.</p>
+              <img src="/assets/shower.CyEismlK.jpg" alt="Ванна/Душ" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b2">
+              <h3>Унiтаз</h3>
+              <p>Впораємоя з будь-якими забрудненнями.</p>
+              <img src="/assets/toilet.B4yjNX0P.jpg" alt="Унітаз" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b3">
+              <h3>Дзеркало</h3>
+              <p>Протираємо всі дзеркала.</p>
+              <img src="/assets/mirror.CquYQJub.jpg" alt="Дзеркало" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b4">
+              <h3>Раковина</h3>
+              <p>Миємо крани від нальоту та раковину від забруднень.</p>
+              <img src="/assets/washbasin.Dt2XLfJd.jpg" alt="Раковина" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="b5">
+              <h3>Поверхні</h3>
+              <p>Протираємо поверхні та підлогу</p>
+              <img src="/assets/detergents.Bu3v9ZjA.jpg" alt="Поверхні" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cleaningBlock fade-in" data-clean-block="hall">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__left">
+            <li class="cleaningItem fade-in" data-item="h1">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-parquet"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Підлога</p>
+            </li>
+            <li class="cleaningItem fade-in" data-item="h2">
+              <svg height="55" width="55">
+                <use
+                  href="/assets/cleaningSection.GdPV0Ra2.svg#icon-hanger"
+                  width="54"
+                  height="54"
+                ></use>
+              </svg>
+              <p>Меблі</p>
+            </li>
+          </ul>
+
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+
+              <a href="#contacts" class="cleaningDesc__button">Дізнатися ціну</a>
+            </li>
+            <li class="cleaningDesc fade-in" data-item-block="h1">
+              <h3>Підлога</h3>
+              <p>Пилососимо та миємо підлогу.</p>
+              <img src="/assets/parquet.DcHaBf5w.jpg" alt="Підлога" />
+            </li>
+
+            <li class="cleaningDesc fade-in" data-item-block="h2">
+              <h3>Меблі</h3>
+              <p>Протираємо комоди, лавочки та шафи (ззовні).</p>
+              <img src="/assets/hanger.BvUODkGx.jpg" alt="Меблі" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="cleaning">
+  <div class="container cleaning__inner" style="padding: 40px 24px">
+    <h1 class="cleaning__title fade-in">Прибирання після ремонту</h1>
+
+    <p class="cleaning__subtitle fade-in">
+      Прибираємо квартиру після ремонту під ключ. Починаємо з вивозу
+      будівельного сміття і закінчуємо вашим переїздом в нове житло.
+    </p>
+
+    <div class="cleaning__content">
+      <div class="cleaningBlock active" data-clean-block="kitchen">
+        <div class="cleaningBlock__inner">
+          <ul class="cleaningBlock__right">
+            <li class="cleaningDesc fade-in active">
+              <img
+                src="/assets/renovation_clean.CS9KhK3h.jpg"
+                alt="Прибирання після ремонту"
+                class="cleaningBlock__img fade-in active"
+              />
+              <a href="#contacts" class="cleaningDesc__button"
+                >Дізнатися ціну</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gallery" id="gallery">
+  <div class="container gallery__inner">
+    <div class="gallery__content">
+      <h1 style="color: var(--color-primary)">Галерея</h1>
+
+      <div class="gallery__row">
+        <div class="gallery__row-card">
+          <img
+            src="/assets/him_clean-before.CaJC3Ujz.jpg"
+            alt="Хімічна чистка - до"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+          <img
+            src="/assets/him_clean-after.DkJ3M8i0.jpg"
+            alt="Хімічна чистка - після"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+        </div>
+        <div class="gallery__row-card">
+          <img
+            src="/assets/smell_clean-before.CbHYjACF.jpg"
+            alt="Усунення запаху - до"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+          <img
+            src="/assets/smell_clean-after.C44GEO5I.jpg"
+            alt="Усунення запаху - після"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="gallery__row">
+        <div class="gallery__row-card">
+          <img
+            src="/assets/glass_clean-before.DsGkQ1Cg.jpg"
+            alt="Миття скла - до"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+          <img
+            src="/assets/glass_clean-after.BONx171w.jpg"
+            alt="Миття скла - після"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+        </div>
+        <div class="gallery__row-card">
+          <img
+            src="/assets/bd-glass_clean-before.PYvjRY2j.jpg"
+            alt="Миття биде-скла - до"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+          <img
+            src="/assets/bd-glass_clean-after.0Qcl6xPo.jpg"
+            alt="Миття биде-скла - після"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="gallery__row">
+        <div class="gallery__row-card">
+          <img
+            src="/assets/stone_clean-before.BPyRzMaH.jpg"
+            alt="Чистка каменю - до"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+          <img
+            src="/assets/stone_clean-after.DIgZpCAJ.jpg"
+            alt="Чистка каменю - після"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+        </div>
+        <div class="gallery__row-card">
+          <img
+            src="/assets/sofa_clean-before.DL6PMQNa.jpg"
+            alt="Чистка дивана - до"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+          <img
+            src="/assets/sofa_clean-after.BTEv6AuI.jpg"
+            alt="Чистка дивана - після"
+            width="350"
+            height="350"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="advantages" id="benefits">
+  <div class="container advantages__inner">
+    <div class="advantages__image fade-in">
+      <h2>Переваги нашої компанії</h2>
+      <img
+        src="/assets/company_person.tTtKZ-lt.jpg"
+        alt="Наш співробітник"
+        width="130"
+        height="130"
+        loading="lazy"
+      />
+    </div>
+    <div class="advantages__list">
+      <ul class="advantageCards">
+        <li class="advantageCard fade-in">
+          <div class="advantageCard__header">
+            <h2 class="advantageCard__title">Професійне обладнання</h2>
+            <button class="advantageCard__toggle">+</button>
+          </div>
+
+          <div class="advantageCard__details">
+            <p>
+              Ми використовуємо сучасну техніку, яка забезпечує глибоке очищення
+              без шкоди для поверхонь.
+            </p>
+            <ul class="advantageCard__equipment">
+              <li>
+                <img
+                  src="/assets/professional-equipment.DOgoEi39.jpg"
+                  alt="Екстрактор"
+                  width="130"
+                  height="130"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <p>Екстрактори Kärcher</p>
+                <br />
+                <p>Пароочисник</p>
+              </li>
+              <li>
+                <p>Озонатори</p>
+                <br />
+                <p>Апарат високого тиску</p>
+              </li>
+              <li><p>Професійні та сертифіковані засоби</p></li>
+            </ul>
+          </div>
+        </li>
+        <li class="advantageCard fade-in">
+          <div class="advantageCard__header">
+            <h2 class="advantageCard__title">Екологічні засоби</h2>
+            <button class="advantageCard__toggle">+</button>
+          </div>
+
+          <div class="advantageCard__details">
+            <p>
+              Усі мийні засоби — сертифіковані, безпечні для людей, тварин і
+              навколишнього середовища.
+            </p>
+            <ul class="advantageCard__equipment">
+              <li>
+                <img
+                  src="/assets/ecological-means.BogiANWd.jpg"
+                  alt="Екстрактор"
+                  width="130"
+                  height="130"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <p>Біоактивні формули</p>
+                <br />
+                <p>Засоби без хлору</p>
+              </li>
+              <li><p>Гіпоалергенні компоненти</p></li>
+              <li><p>Еко-дезінфекція</p></li>
+            </ul>
+          </div>
+        </li>
+        <li class="advantageCard fade-in">
+          <div class="advantageCard__header">
+            <h2 class="advantageCard__title">Досвідчені спеціалісти</h2>
+            <button class="advantageCard__toggle">+</button>
+          </div>
+
+          <div class="advantageCard__details">
+            <p>
+              Наша команда — це навчені фахівці з досвідом у побутовому та
+              комерційному клінінгу.
+            </p>
+            <ul class="advantageCard__equipment">
+              <li>
+                <img
+                  src="/assets/experienced-specialists.CLntKqwr.jpg"
+                  alt="Екстрактор"
+                  width="130"
+                  height="130"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <p>Внутрішнє навчання</p>
+                <br />
+                <p>Чіткі стандарти якості</p>
+              </li>
+              <li><p>Робота в парі або групах</p></li>
+              <li><p>Контроль виконання</p></li>
+            </ul>
+          </div>
+        </li>
+        <li class="advantageCard fade-in">
+          <div class="advantageCard__header">
+            <h2 class="advantageCard__title">Гарантія якості</h2>
+            <button class="advantageCard__toggle">+</button>
+          </div>
+
+          <div class="advantageCard__details">
+            <p>
+              Ми відповідаємо за результат — якщо щось не так, повернемось і
+              виправимо.
+            </p>
+            <ul class="advantageCard__equipment">
+              <li>
+                <img
+                  src="/assets/quality-guarantee.D2-0d3yR.jpg"
+                  alt="Екстрактор"
+                  width="130"
+                  height="130"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <p>Фотофіксація “до/після”</p>
+                <br />
+                <p>Перевірка чек-листу</p>
+              </li>
+              <li><p>Зворотний зв’язок з клієнтом</p></li>
+              <li><p>Повторна обробка за запитом</p></li>
+            </ul>
+          </div>
+        </li>
+        <li class="advantageCard fade-in">
+          <div class="advantageCard__header">
+            <h2 class="advantageCard__title">Оперативність</h2>
+            <button class="advantageCard__toggle">+</button>
+          </div>
+
+          <div class="advantageCard__details">
+            <p>
+              Приїжджаємо швидко, працюємо злагоджено, не затримуємо процеси.
+            </p>
+            <ul class="advantageCard__equipment">
+              <li>
+                <img
+                  src="/assets/efficiency.BjxhpRH_.jpg"
+                  alt="Екстрактор"
+                  width="130"
+                  height="130"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <p>Готові бригади</p>
+                <br />
+                <p>Чіткий таймінг</p>
+              </li>
+              <li><p>Попереднє планування</p></li>
+              <li><p>Робота без зайвих пауз</p></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="advantageCard fade-in">
+          <div class="advantageCard__header">
+            <h2 class="advantageCard__title">Зручний графік роботи</h2>
+            <button class="advantageCard__toggle">+</button>
+          </div>
+
+          <div class="advantageCard__details">
+            <p>
+              Працюємо у вихідні, вечорами — підлаштовуємось під ваш ритм життя.
+            </p>
+            <ul class="advantageCard__equipment">
+              <li>
+                <img
+                  src="/assets/convenient-schedule.3-cYa3f4.jpg"
+                  alt="Екстрактор"
+                  width="130"
+                  height="130"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <p>Онлайн-бронювання</p>
+                <br />
+                <p>Гнучкі слоти</p>
+              </li>
+              <li><p>Прибирання до/після робочого дня</p></li>
+              <li><p>Узгодження часу з клієнтом</p></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews fade-in" id="gallery">
+  <div class="container reviews__inner">
+    <h1 class="reviews__title">Відгуки клієнтів</h1>
+
+    <div class="reviews__controls">
+      <button
+        class="reviews__arrow reviews__arrow--left"
+        aria-label="Попередній"
+      >
+        ←
+      </button>
+      <button
+        class="reviews__arrow reviews__arrow--right"
+        aria-label="Наступний"
+      >
+        →
+      </button>
+    </div>
+
+    <div class="reviews__viewport">
+      <ul class="reviews__track">
+        <li class="reviews__card">
+          <img
+            src="/assets/review-1.BFmNTMgo.jpg"
+            alt="Відгук 1"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card">
+          <img
+            src="/assets/review-2.BPv4TRnp.jpg"
+            alt="Відгук 2"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card">
+          <img
+            src="/assets/review-3.WKW-Vd6E.jpg"
+            alt="Відгук 3"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card">
+          <img
+            src="/assets/review-4.qmz5piF4.jpg"
+            alt="Відгук 4"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card">
+          <img
+            src="/assets/review-5.C1kUz3IG.jpg"
+            alt="Відгук 5"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card">
+          <img
+            src="/assets/review-6.BdgcMZPE.jpg"
+            alt="Відгук 6"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card">
+          <img
+            src="/assets/review-7.D6LOVFTQ.jpg"
+            alt="Відгук 7"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card">
+          <img
+            src="/assets/review-8.QGPwu2BU.jpg"
+            alt="Відгук 8"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card">
+          <img
+            src="/assets/review-9.CRdpC_2H.jpg"
+            alt="Відгук 9"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card">
+          <img
+            src="/assets/review-10.CAdrsAQ5.jpg"
+            alt="Відгук 10"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card">
+          <img
+            src="/assets/review-11.CCCYSC7-.jpg"
+            alt="Відгук 11"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </li>
+        <li class="reviews__card" style="box-shadow: none;">
+        </li>
+        <li class="reviews__card" style="box-shadow: none;">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="communication fade-in">
+  <div class="container communication__inner">
+    <div class="communication__image">
+      <img
+        src="/assets/form_persons.De-ucNNU.jpg"
+        alt="Фото"
+        width="334"
+        height="362"
+      />
+    </div>
+    <form
+      action="https://formsubmit.co/Zhukovskiyroman808@gmail.com"
+      method="POST"
+      class="communication__form"
+      id="form"
+      novalidate
+    >
+      <h1>Зв'яжіться з нами</h1>
+
+      <input type="hidden" name="_subject" value="Нове звернення з сайту" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+
+      <div class="communication__form-field">
+        <label for="username">Ім'я:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          minlength="2"
+          maxlength="50"
+          pattern="[A-Za-zА-Яа-яЇїЄєІі\s]+"
+        />
+      </div>
+
+      <div class="communication__form-field">
+        <label for="phone_number">Номер телефону:</label>
+        <input
+          type="tel"
+          id="phone_number"
+          name="phone"
+          required
+          pattern="[+]?[0-9]{10,}"
+          placeholder="+380..."
+        />
+      </div>
+
+      <button type="submit">Надіслати</button>
+    </form>
+  </div>
+</section>
+
+    </main>
+    <footer class="contacts" id="contacts">
+  <div class="container contacts__inner fade-in">
+    <h1>Контакти</h1>
+    <div class="contacts__content">
+      <h2><a href="tel:+380970809602">+380970809602</a></h2>
+      <h2><a href="tel:+380971511036">+380971511036</a></h2>
+      <div class="contacts__content-links">
+        <a
+          href="https://t.me/ScarabClean"
+          aria-label="Посилання на Telegram"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg class="contacts__content-links--svg-telegram">
+            <use
+              href="/assets/symbol-defs.3rd7F7eb.svg#icon-telegram"
+              width="20"
+              x="13"
+            ></use>
+          </svg>
+        </a>
+        <a
+          href="https://www.instagram.com/scarab_clean?igsh=N2pkaG04eGxlODF1&utm_source=qr"
+          aria-label="Посилання на Instagram"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg class="contacts__content-links--svg-instagram">
+            <use
+              href="/assets/symbol-defs.3rd7F7eb.svg#icon-instagram"
+              width="20"
+              x="15"
+            ></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('loader');
+        if (!loader) return;
+
+        loader.classList.add('hidden');
+
+        setTimeout(() => {
+          loader.remove();
+        }, 300);
+      });
+      window.addEventListener('load', () => {
+        animateHeader();
+      });
+
+      function animateHeader() {
+        const header = document.querySelector('.site-header');
+        if (!header) return;
+        header.classList.add('show');
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        const blocks = document.querySelectorAll('.block-animation');
+        blocks.forEach(block => {
+          block.classList.add('show');
+        });
+      });
+    </script>
+
+  </body>
+</html>

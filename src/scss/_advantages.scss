@@ -1,0 +1,134 @@
+.advantages {
+  background-color: var(--color-bg-light);
+  padding: 80px 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 600px;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  &__list {
+    flex: 1 1 600px;
+  }
+
+  &__image {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-primary);
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.advantageCards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.advantageCard {
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  transition: filter 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    filter: brightness(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  &__toggle {
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color-primary);
+    transition: opacity 0.2s ease;
+    will-change: opacity;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__details {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+
+    &.active {
+      max-height: 800px;
+      opacity: 1;
+    }
+  }
+
+  &__equipment {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    list-style: none;
+    color: var(--color-primary);
+    padding: 0;
+
+    li {
+      text-align: center;
+      font-size: 14px;
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

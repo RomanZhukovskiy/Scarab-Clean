@@ -1,0 +1,93 @@
+.communication {
+  padding: 80px 0;
+  background-color: var(--color-white);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    & h1 {
+      color: var(--color-primary);
+    }
+
+    &-field {
+      display: flex;
+      flex-direction: column;
+
+      & label {
+        color: var(--color-bg-dark);
+      }
+
+      & input {
+        height: 30px;
+        padding: 5px;
+        border: 1px solid rgba(33, 33, 33, 0.125);
+        border-radius: 5px;
+        box-shadow: 0 4px 4px 0 var(--color-bg-brand);
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    & button {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      border: none;
+      border-radius: 5px;
+      height: 40px;
+      cursor: pointer;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: var(--color-bg-brand);
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__image {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 400px;
+      max-height: 375px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .communication {
+    &__image {
+      img {
+        max-width: 100%;
+        max-height: 550px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .communication {
+    &__inner {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

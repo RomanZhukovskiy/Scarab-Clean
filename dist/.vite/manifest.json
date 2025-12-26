@@ -1,0 +1,368 @@
+{
+  "index.html": {
+    "file": "assets/index.DwC3-JOb.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "css": [
+      "assets/index.CAORMLWG.css"
+    ],
+    "assets": [
+      "assets/background.BumXoWS0.jpg",
+      "assets/logo_Scarab-Clean.D9PIuWRp.webp",
+      "assets/person_clean-glass.Bf95WO8M.jpg",
+      "assets/dry_cleaning-furniture.DPB9TRsX.jpg",
+      "assets/odor_removal.COtBzWtj.jpg",
+      "assets/facade_cleaning.ydX-1F1v.jpg",
+      "assets/washing_windows-renovation.CKdYNo94.jpg",
+      "assets/window_cleaning-machine.DE2Pfqwx.jpg",
+      "assets/paving_stones-clean.79t3mwz8.jpg",
+      "assets/curtain_rods-clean.BsItAvq_.jpg",
+      "assets/supportive_clean.DxiqdgtD.jpg",
+      "assets/general_clean.BkO7jHAU.jpg",
+      "assets/cleaningWindow.P3yFM_8R.webp",
+      "assets/cleaningSection.GdPV0Ra2.svg",
+      "assets/plates.DX4Q5Cz7.jpg",
+      "assets/stove.BbefKNFr.jpg",
+      "assets/shell.CGmzQgU0.jpg",
+      "assets/trash.DhzTvMFa.jpg",
+      "assets/tile.CfmW9U8v.jpg",
+      "assets/kitchenHood.DmxLf7MC.jpg",
+      "assets/shelf.BzTCICX4.jpg",
+      "assets/teapot.BVb6agA_.jpg",
+      "assets/surfaces.BhK7quSU.jpg",
+      "assets/bed.CdAMgr7f.jpg",
+      "assets/Tshirt.D0Ye2MMO.jpg",
+      "assets/wardrobe.BiISL7y0.jpg",
+      "assets/lamp.GCgyDaHU.jpg",
+      "assets/shelves.CDI0dNNf.jpg",
+      "assets/vase.BCRPWxqy.jpg",
+      "assets/toilet.B4yjNX0P.jpg",
+      "assets/largeMirror.B6Nq_0-V.jpg",
+      "assets/washbasin.Dt2XLfJd.jpg",
+      "assets/detergents.Bu3v9ZjA.jpg",
+      "assets/parquet.DcHaBf5w.jpg",
+      "assets/hanger.BvUODkGx.jpg",
+      "assets/table.c0tPz36p.jpg",
+      "assets/mirror.CquYQJub.jpg",
+      "assets/shower.CyEismlK.jpg",
+      "assets/renovation_clean.CS9KhK3h.jpg",
+      "assets/him_clean-before.CaJC3Ujz.jpg",
+      "assets/him_clean-after.DkJ3M8i0.jpg",
+      "assets/smell_clean-before.CbHYjACF.jpg",
+      "assets/smell_clean-after.C44GEO5I.jpg",
+      "assets/glass_clean-before.DsGkQ1Cg.jpg",
+      "assets/glass_clean-after.BONx171w.jpg",
+      "assets/bd-glass_clean-before.PYvjRY2j.jpg",
+      "assets/bd-glass_clean-after.0Qcl6xPo.jpg",
+      "assets/stone_clean-before.BPyRzMaH.jpg",
+      "assets/stone_clean-after.DIgZpCAJ.jpg",
+      "assets/sofa_clean-before.DL6PMQNa.jpg",
+      "assets/sofa_clean-after.BTEv6AuI.jpg",
+      "assets/company_person.tTtKZ-lt.jpg",
+      "assets/professional-equipment.DOgoEi39.jpg",
+      "assets/ecological-means.BogiANWd.jpg",
+      "assets/experienced-specialists.CLntKqwr.jpg",
+      "assets/quality-guarantee.D2-0d3yR.jpg",
+      "assets/efficiency.BjxhpRH_.jpg",
+      "assets/convenient-schedule.3-cYa3f4.jpg",
+      "assets/review-1.BFmNTMgo.jpg",
+      "assets/review-2.BPv4TRnp.jpg",
+      "assets/review-3.WKW-Vd6E.jpg",
+      "assets/review-4.qmz5piF4.jpg",
+      "assets/review-5.C1kUz3IG.jpg",
+      "assets/review-6.BdgcMZPE.jpg",
+      "assets/review-7.D6LOVFTQ.jpg",
+      "assets/review-8.QGPwu2BU.jpg",
+      "assets/review-9.CRdpC_2H.jpg",
+      "assets/review-10.CAdrsAQ5.jpg",
+      "assets/review-11.CCCYSC7-.jpg",
+      "assets/form_persons.De-ucNNU.jpg",
+      "assets/symbol-defs.3rd7F7eb.svg"
+    ]
+  },
+  "src/image/Tshirt.jpg": {
+    "file": "assets/Tshirt.D0Ye2MMO.jpg",
+    "src": "src/image/Tshirt.jpg"
+  },
+  "src/image/background.jpg": {
+    "file": "assets/background.BumXoWS0.jpg",
+    "src": "src/image/background.jpg"
+  },
+  "src/image/bd-glass_clean-after.jpg": {
+    "file": "assets/bd-glass_clean-after.0Qcl6xPo.jpg",
+    "src": "src/image/bd-glass_clean-after.jpg"
+  },
+  "src/image/bd-glass_clean-before.jpg": {
+    "file": "assets/bd-glass_clean-before.PYvjRY2j.jpg",
+    "src": "src/image/bd-glass_clean-before.jpg"
+  },
+  "src/image/bed.jpg": {
+    "file": "assets/bed.CdAMgr7f.jpg",
+    "src": "src/image/bed.jpg"
+  },
+  "src/image/cleaningWindow.webp": {
+    "file": "assets/cleaningWindow.P3yFM_8R.webp",
+    "src": "src/image/cleaningWindow.webp"
+  },
+  "src/image/company_person.jpg": {
+    "file": "assets/company_person.tTtKZ-lt.jpg",
+    "src": "src/image/company_person.jpg"
+  },
+  "src/image/convenient-schedule.jpg": {
+    "file": "assets/convenient-schedule.3-cYa3f4.jpg",
+    "src": "src/image/convenient-schedule.jpg"
+  },
+  "src/image/curtain_rods-clean.jpg": {
+    "file": "assets/curtain_rods-clean.BsItAvq_.jpg",
+    "src": "src/image/curtain_rods-clean.jpg"
+  },
+  "src/image/detergents.jpg": {
+    "file": "assets/detergents.Bu3v9ZjA.jpg",
+    "src": "src/image/detergents.jpg"
+  },
+  "src/image/dry_cleaning-furniture.jpg": {
+    "file": "assets/dry_cleaning-furniture.DPB9TRsX.jpg",
+    "src": "src/image/dry_cleaning-furniture.jpg"
+  },
+  "src/image/ecological-means.jpg": {
+    "file": "assets/ecological-means.BogiANWd.jpg",
+    "src": "src/image/ecological-means.jpg"
+  },
+  "src/image/efficiency.jpg": {
+    "file": "assets/efficiency.BjxhpRH_.jpg",
+    "src": "src/image/efficiency.jpg"
+  },
+  "src/image/experienced-specialists.jpg": {
+    "file": "assets/experienced-specialists.CLntKqwr.jpg",
+    "src": "src/image/experienced-specialists.jpg"
+  },
+  "src/image/facade_cleaning.jpg": {
+    "file": "assets/facade_cleaning.ydX-1F1v.jpg",
+    "src": "src/image/facade_cleaning.jpg"
+  },
+  "src/image/form_persons.jpg": {
+    "file": "assets/form_persons.De-ucNNU.jpg",
+    "src": "src/image/form_persons.jpg"
+  },
+  "src/image/general_clean.jpg": {
+    "file": "assets/general_clean.BkO7jHAU.jpg",
+    "src": "src/image/general_clean.jpg"
+  },
+  "src/image/glass_clean-after.jpg": {
+    "file": "assets/glass_clean-after.BONx171w.jpg",
+    "src": "src/image/glass_clean-after.jpg"
+  },
+  "src/image/glass_clean-before.jpg": {
+    "file": "assets/glass_clean-before.DsGkQ1Cg.jpg",
+    "src": "src/image/glass_clean-before.jpg"
+  },
+  "src/image/hanger.jpg": {
+    "file": "assets/hanger.BvUODkGx.jpg",
+    "src": "src/image/hanger.jpg"
+  },
+  "src/image/him_clean-after.jpg": {
+    "file": "assets/him_clean-after.DkJ3M8i0.jpg",
+    "src": "src/image/him_clean-after.jpg"
+  },
+  "src/image/him_clean-before.jpg": {
+    "file": "assets/him_clean-before.CaJC3Ujz.jpg",
+    "src": "src/image/him_clean-before.jpg"
+  },
+  "src/image/kitchenHood.jpg": {
+    "file": "assets/kitchenHood.DmxLf7MC.jpg",
+    "src": "src/image/kitchenHood.jpg"
+  },
+  "src/image/lamp.jpg": {
+    "file": "assets/lamp.GCgyDaHU.jpg",
+    "src": "src/image/lamp.jpg"
+  },
+  "src/image/largeMirror.jpg": {
+    "file": "assets/largeMirror.B6Nq_0-V.jpg",
+    "src": "src/image/largeMirror.jpg"
+  },
+  "src/image/logo_Scarab-Clean.webp": {
+    "file": "assets/logo_Scarab-Clean.D9PIuWRp.webp",
+    "src": "src/image/logo_Scarab-Clean.webp"
+  },
+  "src/image/mirror.jpg": {
+    "file": "assets/mirror.CquYQJub.jpg",
+    "src": "src/image/mirror.jpg"
+  },
+  "src/image/odor_removal.jpg": {
+    "file": "assets/odor_removal.COtBzWtj.jpg",
+    "src": "src/image/odor_removal.jpg"
+  },
+  "src/image/parquet.jpg": {
+    "file": "assets/parquet.DcHaBf5w.jpg",
+    "src": "src/image/parquet.jpg"
+  },
+  "src/image/paving_stones-clean.jpg": {
+    "file": "assets/paving_stones-clean.79t3mwz8.jpg",
+    "src": "src/image/paving_stones-clean.jpg"
+  },
+  "src/image/person_clean-glass.jpg": {
+    "file": "assets/person_clean-glass.Bf95WO8M.jpg",
+    "src": "src/image/person_clean-glass.jpg"
+  },
+  "src/image/plates.jpg": {
+    "file": "assets/plates.DX4Q5Cz7.jpg",
+    "src": "src/image/plates.jpg"
+  },
+  "src/image/professional-equipment.jpg": {
+    "file": "assets/professional-equipment.DOgoEi39.jpg",
+    "src": "src/image/professional-equipment.jpg"
+  },
+  "src/image/quality-guarantee.jpg": {
+    "file": "assets/quality-guarantee.D2-0d3yR.jpg",
+    "src": "src/image/quality-guarantee.jpg"
+  },
+  "src/image/renovation_clean.jpg": {
+    "file": "assets/renovation_clean.CS9KhK3h.jpg",
+    "src": "src/image/renovation_clean.jpg"
+  },
+  "src/image/review-1.jpg": {
+    "file": "assets/review-1.BFmNTMgo.jpg",
+    "src": "src/image/review-1.jpg"
+  },
+  "src/image/review-10.jpg": {
+    "file": "assets/review-10.CAdrsAQ5.jpg",
+    "src": "src/image/review-10.jpg"
+  },
+  "src/image/review-11.jpg": {
+    "file": "assets/review-11.CCCYSC7-.jpg",
+    "src": "src/image/review-11.jpg"
+  },
+  "src/image/review-2.jpg": {
+    "file": "assets/review-2.BPv4TRnp.jpg",
+    "src": "src/image/review-2.jpg"
+  },
+  "src/image/review-3.jpg": {
+    "file": "assets/review-3.WKW-Vd6E.jpg",
+    "src": "src/image/review-3.jpg"
+  },
+  "src/image/review-4.jpg": {
+    "file": "assets/review-4.qmz5piF4.jpg",
+    "src": "src/image/review-4.jpg"
+  },
+  "src/image/review-5.jpg": {
+    "file": "assets/review-5.C1kUz3IG.jpg",
+    "src": "src/image/review-5.jpg"
+  },
+  "src/image/review-6.jpg": {
+    "file": "assets/review-6.BdgcMZPE.jpg",
+    "src": "src/image/review-6.jpg"
+  },
+  "src/image/review-7.jpg": {
+    "file": "assets/review-7.D6LOVFTQ.jpg",
+    "src": "src/image/review-7.jpg"
+  },
+  "src/image/review-8.jpg": {
+    "file": "assets/review-8.QGPwu2BU.jpg",
+    "src": "src/image/review-8.jpg"
+  },
+  "src/image/review-9.jpg": {
+    "file": "assets/review-9.CRdpC_2H.jpg",
+    "src": "src/image/review-9.jpg"
+  },
+  "src/image/shelf.jpg": {
+    "file": "assets/shelf.BzTCICX4.jpg",
+    "src": "src/image/shelf.jpg"
+  },
+  "src/image/shell.jpg": {
+    "file": "assets/shell.CGmzQgU0.jpg",
+    "src": "src/image/shell.jpg"
+  },
+  "src/image/shelves.jpg": {
+    "file": "assets/shelves.CDI0dNNf.jpg",
+    "src": "src/image/shelves.jpg"
+  },
+  "src/image/shower.jpg": {
+    "file": "assets/shower.CyEismlK.jpg",
+    "src": "src/image/shower.jpg"
+  },
+  "src/image/smell_clean-after.jpg": {
+    "file": "assets/smell_clean-after.C44GEO5I.jpg",
+    "src": "src/image/smell_clean-after.jpg"
+  },
+  "src/image/smell_clean-before.jpg": {
+    "file": "assets/smell_clean-before.CbHYjACF.jpg",
+    "src": "src/image/smell_clean-before.jpg"
+  },
+  "src/image/sofa_clean-after.jpg": {
+    "file": "assets/sofa_clean-after.BTEv6AuI.jpg",
+    "src": "src/image/sofa_clean-after.jpg"
+  },
+  "src/image/sofa_clean-before.jpg": {
+    "file": "assets/sofa_clean-before.DL6PMQNa.jpg",
+    "src": "src/image/sofa_clean-before.jpg"
+  },
+  "src/image/stone_clean-after.jpg": {
+    "file": "assets/stone_clean-after.DIgZpCAJ.jpg",
+    "src": "src/image/stone_clean-after.jpg"
+  },
+  "src/image/stone_clean-before.jpg": {
+    "file": "assets/stone_clean-before.BPyRzMaH.jpg",
+    "src": "src/image/stone_clean-before.jpg"
+  },
+  "src/image/stove.jpg": {
+    "file": "assets/stove.BbefKNFr.jpg",
+    "src": "src/image/stove.jpg"
+  },
+  "src/image/supportive_clean.jpg": {
+    "file": "assets/supportive_clean.DxiqdgtD.jpg",
+    "src": "src/image/supportive_clean.jpg"
+  },
+  "src/image/surfaces.jpg": {
+    "file": "assets/surfaces.BhK7quSU.jpg",
+    "src": "src/image/surfaces.jpg"
+  },
+  "src/image/svg/cleaningSection.svg": {
+    "file": "assets/cleaningSection.GdPV0Ra2.svg",
+    "src": "src/image/svg/cleaningSection.svg"
+  },
+  "src/image/svg/symbol-defs.svg": {
+    "file": "assets/symbol-defs.3rd7F7eb.svg",
+    "src": "src/image/svg/symbol-defs.svg"
+  },
+  "src/image/table.jpg": {
+    "file": "assets/table.c0tPz36p.jpg",
+    "src": "src/image/table.jpg"
+  },
+  "src/image/teapot.jpg": {
+    "file": "assets/teapot.BVb6agA_.jpg",
+    "src": "src/image/teapot.jpg"
+  },
+  "src/image/tile.jpg": {
+    "file": "assets/tile.CfmW9U8v.jpg",
+    "src": "src/image/tile.jpg"
+  },
+  "src/image/toilet.jpg": {
+    "file": "assets/toilet.B4yjNX0P.jpg",
+    "src": "src/image/toilet.jpg"
+  },
+  "src/image/trash.jpg": {
+    "file": "assets/trash.DhzTvMFa.jpg",
+    "src": "src/image/trash.jpg"
+  },
+  "src/image/vase.jpg": {
+    "file": "assets/vase.BCRPWxqy.jpg",
+    "src": "src/image/vase.jpg"
+  },
+  "src/image/wardrobe.jpg": {
+    "file": "assets/wardrobe.BiISL7y0.jpg",
+    "src": "src/image/wardrobe.jpg"
+  },
+  "src/image/washbasin.jpg": {
+    "file": "assets/washbasin.Dt2XLfJd.jpg",
+    "src": "src/image/washbasin.jpg"
+  },
+  "src/image/washing_windows-renovation.jpg": {
+    "file": "assets/washing_windows-renovation.CKdYNo94.jpg",
+    "src": "src/image/washing_windows-renovation.jpg"
+  },
+  "src/image/window_cleaning-machine.jpg": {
+    "file": "assets/window_cleaning-machine.DE2Pfqwx.jpg",
+    "src": "src/image/window_cleaning-machine.jpg"
+  }
+}

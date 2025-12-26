@@ -1,0 +1,52 @@
+<section class="communication fade-in">
+  <div class="container communication__inner">
+    <div class="communication__image">
+      <img
+        src="/src/image/form_persons.jpg"
+        alt="Фото"
+        width="334"
+        height="362"
+      />
+    </div>
+    <form
+      action="https://formsubmit.co/Zhukovskiyroman808@gmail.com"
+      method="POST"
+      class="communication__form"
+      id="form"
+      novalidate
+    >
+      <h1>Зв'яжіться з нами</h1>
+
+      <input type="hidden" name="_subject" value="Нове звернення з сайту" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+
+      <div class="communication__form-field">
+        <label for="username">Ім'я:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          minlength="2"
+          maxlength="50"
+          pattern="[A-Za-zА-Яа-яЇїЄєІі\s]+"
+        />
+      </div>
+
+      <div class="communication__form-field">
+        <label for="phone_number">Номер телефону:</label>
+        <input
+          type="tel"
+          id="phone_number"
+          name="phone"
+          required
+          pattern="[+]?[0-9]{10,}"
+          placeholder="+380..."
+        />
+      </div>
+
+      <button type="submit">Надіслати</button>
+    </form>
+  </div>
+</section>

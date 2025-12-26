@@ -1,0 +1,117 @@
+.contacts {
+  background-color: var(--color-bg-light);
+  padding: 80px 0;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    & h1 {
+      color: var(--color-primary);
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    a {
+      color: var(--color-bg-dark);
+      transition: 250ms;
+    }
+
+    a:hover {
+      color: var(--color-primary);
+      margin-top: -5px;
+    }
+
+    h2 {
+      transition: 250ms;
+    }
+    h2:hover {
+      transform: scale(1.02);
+    }
+
+    &-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      & a {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      &--svg-telegram {
+        background-color: #4f5bd5;
+        fill: var(--color-white);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 4px 0 var(--color-bg-brand);
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+      &--svg-instagram {
+        background: linear-gradient(
+          45deg,
+          #feda75 0%,
+          #fa7e1e 30%,
+          #d62976 60%,
+          #962fbf 80%,
+          #4f5bd5 100%
+        );
+        fill: var(--color-white);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0 4px 4px 0 var(--color-bg-brand);
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+      &--svg-viber {
+        background-color: #962fbf;
+        fill: var(--color-white);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0 4px 4px 0 var(--color-bg-brand);
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+      &--svg-whatsapp {
+        background-color: chartreuse;
+        fill: var(--color-white);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0 4px 4px 0 var(--color-bg-brand);
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    & button {
+      background-color: var(--color-bg-brand);
+      color: var(--color-white);
+      border: none;
+      border-radius: 5px;
+      height: 40px;
+      cursor: pointer;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: var(--color-primary);
+        transform: scale(1.05);
+      }
+    }
+  }
+}
