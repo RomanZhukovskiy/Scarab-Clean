@@ -35,10 +35,11 @@ export default defineConfig({
   plugins: [
     injectHTML({
       injectData: {
-        title: 'Scarab Clean — Клінінгова компанія',
+        title: 'Scarab Clean — Прибирання у Львові',
         description:
-          'Професійний клінінг для дому та бізнесу. Надійно, швидко, якісно.',
-        keywords: 'клінінг, прибирання, миття вікон, хімчистка, Львів',
+          'Scarab Clean — професійне прибирання у Львові для дому та бізнесу. Надійно, швидко, якісно.',
+        keywords:
+          'прибирання Львів, клінінг Львів, миття вікон Львів, хімчистка Львів, Scarab Clean',
         css: '/assets/index.[hash].css',
       },
     }),
