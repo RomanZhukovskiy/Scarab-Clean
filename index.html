@@ -1,227 +1,73 @@
-<!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <meta
-      name="description"
-      content="Професійний клінінг для дому та бізнесу. Надійно, швидко, якісно."
-    />
-    <meta
-      name="keywords"
-      content="клінінг, прибирання, миття вікон, хімчистка, Львів"
-    />
-    <meta name="author" content="Scarab Clean" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#3087ce" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <meta name="google-site-verification" content="rzLEzVUZOps1axIbpwygBQ7QDvLYQomClmEECCi-jTk" />
+import { defineConfig } from 'vite';
+import injectHTML from 'vite-plugin-html-inject';
+import FullReload from 'vite-plugin-full-reload';
+import compression from 'vite-plugin-compression';
+import { resolve } from 'path';
+import fs from 'fs';
+import path from 'path';
 
-    <title>Scarab Clean — Клінінгова компанія</title>
-    <link
-      rel="icon"
-      href="/src/image/logo_Scarab-Clean.webp"
-      type="image/webp"
-    />
+export default defineConfig({
+  root: '.',
+  base: '/',
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+    minify: 'terser',
+    manifest: true,
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+    rollupOptions: {
+      input: {
+        index: resolve(__dirname, 'index.html'),
+      },
+      output: {
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash][extname]',
+      },
+    },
+  },
 
-    <!-- Fonts - optimized for LCP -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Load fonts with display=swap for better web vitals -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  plugins: [
+    injectHTML({
+      injectData: {
+        title: 'Scarab Clean — Прибирання у Львові',
+        description:
+          'Scarab Clean — професійне прибирання у Львові для дому та бізнесу. Надійно, швидко, якісно.',
+        keywords:
+          'прибирання Львів, клінінг Львів, миття вікон Львів, хімчистка Львів, Scarab Clean',
+        css: '/assets/index.[hash].css',
+      },
+    }),
 
-    <!-- Preload critical images -->
-    <link
-      rel="preload"
-      as="image"
-      href="/src/image/person_clean-glass.jpg"
-      type="image/jpeg"
-      importance="high"
-      fetchpriority="high"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/src/image/background.jpg"
-      fetchpriority="high"
-    />
+    FullReload(['./html/**/*.html']),
 
-    <!-- Preload CSS with async + onload strategy for non-blocking render -->
-    <link
-      rel="preload"
-      href="/assets/index.CItIptCp.css"
-      as="style"
-      importance="high"
-    />
-    <link rel="stylesheet" href="/assets/index.CItIptCp.css" />
+    compression({ algorithm: 'gzip' }),
+    compression({ algorithm: 'brotliCompress' }),
 
-    <!-- Content Security Policy -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="
-  default-src 'self';
-  script-src 'self' 'unsafe-inline';
-  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-  font-src 'self' https://fonts.gstatic.com;
-  img-src 'self' data: blob:;
-  connect-src 'self' https://scarabclean.netlify.app ws://localhost:*;
-"
-    />
+    {
+      name: 'copy-public-files',
+      closeBundle() {
+        const files = ['robots.txt', 'sitemap.xml'];
+        const srcDir = path.resolve(__dirname, 'src/public');
+        const distDir = path.resolve(__dirname, 'dist');
 
-    <style>
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-      }
-      #loader {
-        position: fixed;
-        inset: 0;
-        background: #2c3e50;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-        will-change: opacity, visibility;
-      }
+        files.forEach(file => {
+          const srcPath = path.join(srcDir, file);
+          const distPath = path.join(distDir, file);
 
-      #loader.hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-      }
-
-      .spinner {
-        width: 60px;
-        height: 60px;
-        border: 6px solid rgba(255, 255, 255, 0.3);
-        border-top-color: #fff;
-        border-radius: 50%;
-        animation: spin 0.8s linear infinite;
-        will-change: transform;
-      }
-
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      /* Critical above-the-fold styles to reduce render-blocking and improve LCP */
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 16px;
-      }
-      .site-header {
-        position: fixed;
-        inset: 0 auto auto 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: transparent;
-        z-index: 2000;
-        display: flex;
-        align-items: center;
-      }
-      .header__inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 14px 0;
-      }
-      .logo__image {
-        height: 44px;
-        width: auto;
-        display: block;
-      }
-      .heroSection {
-        display: block;
-        padding-top: 80px;
-      }
-      .hero {
-        display: block;
-        padding: 40px 0;
-      }
-      .hero__title {
-        font-size: clamp(22px, 4.5vw, 40px);
-        margin: 0 0 8px;
-      }
-      .hero__subtitle {
-        font-size: clamp(14px, 2.6vw, 20px);
-        margin: 0 0 18px;
-        color: #444;
-      }
-      /* Ensure hero background images don't block initial paint */
-      .heroSection,
-      .site-header,
-      #loader {
-        background-color: transparent;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="loader">
-      <div class="spinner"></div>
-    </div>
-    <load ="./src/html/header.html" />
-    <main>
-      <load ="./src/html/heroSection.html" />
-      <load ="./src/html/services.html" />
-      <load ="./src/html/cleaningBasic.html" />
-      <load ="./src/html/cleaningGeneral.html" />
-      <load ="./src/html/cleaningSupport.html" />
-      <load ="./src/html/cleaningRenovation.html" />
-      <load ="./src/html/gallery.html" />
-      <load ="./src/html/advantages.html" />
-      <load ="./src/html/reviews.html" />
-      <load ="./src/html/form.html" />
-    </main>
-    <load ="./src/html/contacts.html" />
-
-    <script>
-      window.addEventListener('load', () => {
-        const loader = document.getElementById('loader');
-        if (!loader) return;
-
-        loader.classList.add('hidden');
-
-        setTimeout(() => {
-          loader.remove();
-        }, 300);
-      });
-      window.addEventListener('load', () => {
-        animateHeader();
-      });
-
-      function animateHeader() {
-        const header = document.querySelector('.site-header');
-        if (!header) return;
-        header.classList.add('show');
-      }
-
-      window.addEventListener('DOMContentLoaded', () => {
-        const blocks = document.querySelectorAll('.block-animation');
-        blocks.forEach(block => {
-          block.classList.add('show');
+          if (fs.existsSync(srcPath)) {
+            fs.copyFileSync(srcPath, distPath);
+            console.log(`Copied ${file} to dist/`);
+          } else {
+            console.warn(`File not found: ${srcPath}`);
+          }
         });
-      });
-    </script>
-
-    <script type="module" defer src="/src/main.js"></script>
-  </body>
-</html>
+      },
+    },
+  ],
+});
